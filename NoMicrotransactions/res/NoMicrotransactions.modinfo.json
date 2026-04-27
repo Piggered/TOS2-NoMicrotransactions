@@ -5,7 +5,7 @@
     "Piggered"
   ],
   "Description": "Hides UI elements related to microtransactions (configurable)",
-  "Version": "1.1.0",
+  "Version": "1.1.1",
   "Platforms": [
     "Windows",
     "Mac"
