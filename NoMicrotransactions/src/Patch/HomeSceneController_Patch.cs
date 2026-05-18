@@ -33,10 +33,10 @@ public class HomeSceneController_Patch
             Mod.Logger.LogInfo("Deactivated BattlePassStatusPanel (HomeScene)");
         }
 
-        if (!Settings.GetBool(Mod.Settings.Home_FeaturedItem))
+        if (!Settings.GetBool(Mod.Settings.Home_NewsTab))
         {
-            obj.transform.Find("HomeFeatureItemsAndDailyDealsElementsUI/MainPanelGroup/FeaturedItemUI").gameObject.SetActive(false);
-            Mod.Logger.LogInfo("Deactivated FeaturedItemUI (HomeScene)");
+            obj.transform.Find("HomeNewsTab/ThumbnailContainer").gameObject.SetActive(false);
+            Mod.Logger.LogInfo("Deactivated HomeNewsTab (HomeScene)");
         }
 
         if (!Settings.GetBool(Mod.Settings.Home_DailyDeal))

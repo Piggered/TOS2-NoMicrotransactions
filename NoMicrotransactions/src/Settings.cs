@@ -74,14 +74,14 @@ public class Settings
         OnChanged = OnHomeChange("BattlePassStatusPanel")
     };
 
-    public ModSettings.CheckboxSetting Home_FeaturedItem => new()
+    public ModSettings.CheckboxSetting Home_NewsTab => new()
     {
-        Name = "Home › Featured Item",
-        Description = "Disable this setting to hide the Featured Item panel (bottom-right) on the Home screen.",
-        DefaultValue = false,
+        Name = "Home › News Tab",
+        Description = "Disable this setting to hide the News Tab panel (bottom-right) on the Home screen.",
+        DefaultValue = true,
         Available = true,
         AvailableInGame = false,
-        OnChanged = OnHomeChange("HomeFeatureItemsAndDailyDealsElementsUI/MainPanelGroup/FeaturedItemUI")
+        OnChanged = OnHomeChange("HomeNewsTab/ThumbnailContainer")
     };
 
     public ModSettings.CheckboxSetting Home_DailyDeal => new()
